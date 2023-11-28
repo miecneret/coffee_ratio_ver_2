@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Bean to Water Calculator</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>V60 Brewing Method</h1>
+                       
+            <div id="step1">
+                <h2>Step 1: Select either coffee grind or water and enter the amount.</h2>
+                <div id="buttonGroup">
+                    <button onclick="selectCoffee()">Coffee Grind</button>
+                    <button onclick="selectWater()"> Water</button>
+                </div>
+
+                <div id="waterInput" style="display: none;">
+                    <label for="waterAmount">Amount added (in ml):</label>
+                    <input type="number" id="waterAmount" placeholder="Enter amount of water">
+                </div>
+
+                <div id="coffeeInput" style="display: none;">
+                    <label for="coffeeAmount">Amount added (in grams):</label>
+                    <input type="number" id="coffeeAmount" placeholder="Enter amount of coffee">
+                </div>
+
+                <p></p>
+
+                <button onclick="calculateAmount()">Next</button>
+            </div>
+
+            <div id="result"></div>
+
+            <div id="step2" style="display: none;">
+                <h2>Step 2: Set Timer</h2>
+                <label for="brewingTime">Brewing Time (seconds):</label>
+                <input type="number" id="brewingTime" placeholder="Enter brewing time (in seconds)">
+                
+                <button onclick="startTimer()">Start Timer</button>
+            </div>
+
+            <div id="result"></div>
+            <div id="timer"></div>
+        </div>
+
+        <div class="back-link">
+            <p></p>
+            <a href="../index.html">Back to Brewing Methods</a>
+        </div>
+
+    </div>
+
+    <script src="v60_script.js"></script>
+</body>
+</html>

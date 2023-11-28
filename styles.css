@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(coffee.png); /* Add the path to your background image */
+    background-size: 90%;
+    margin: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for the calculator */
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #ca0f0f;
+}
+
+#step1, #step2 {
+    margin-bottom: 20px;
+}
+
+#buttonGroup {
+    display: flex;
+    justify-content: space-around;
+}
+
+#waterInput, #coffeeInput {
+    margin-top: 10px;
+}
+
+#waterInput label, #coffeeInput label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
