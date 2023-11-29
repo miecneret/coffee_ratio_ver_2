@@ -27,10 +27,10 @@ function calculateAmount() {
     const resultElement = document.getElementById('result');
 
     if (waterAmount) {
-        const calculatedCoffeeAmount = (25 / 400) * waterAmount; // 25g coffee per 400ml water
+        const calculatedCoffeeAmount = (20 / 300) * waterAmount; // 20g coffee per 300ml water
         resultElement.innerHTML += `<p>Use approximately ${calculatedCoffeeAmount.toFixed(1)} grams of coffee for ${waterAmount} ml of water.</p>`;
     } else {
-        const calculatedWaterAmount = (400 / 25) * coffeeAmount; // 400ml water per 25g coffee
+        const calculatedWaterAmount = (300 / 20) * coffeeAmount; // 300ml water per 20g coffee
         resultElement.innerHTML += `<p>Use approximately ${calculatedWaterAmount.toFixed(0)} ml of water for ${coffeeAmount} grams of coffee.</p>`;
     }
 
