@@ -49,8 +49,8 @@ function startTimer() {
         return;
     }
 
-    const resultElement = document.getElementById("result");
-    resultElement.innerHTML += `<p>Brew Time set for ${brewingTime} seconds.</p>`;
+    const resultElement = document.getElementById("brewtime");
+    resultElement.innerHTML += `<p>Brew time set for ${brewingTime} seconds.</p>`;
 
     let seconds = brewingTime;
     countdown = setInterval(() => {

@@ -49,9 +49,9 @@ input, select {
     box-sizing: border-box;
 }
 
-#result {
+#result, #brewtime {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
     color: #333;
 }
 
