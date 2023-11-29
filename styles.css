@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url(coffee.png); /* Add the path to your background image */
+    background-image: url(coffee.png);
     background-size: 90%;
     margin: 50;
     display: flex;
@@ -10,9 +10,9 @@ body {
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for the calculator */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-align: center;
     width: 80%;
@@ -31,12 +31,12 @@ button {
     background-color: #4caf50;
     color: #fff;
     border: none;
+    width: 150px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
+   }
 
 button:hover {
     background-color: #45a049;
@@ -61,10 +61,6 @@ input, select {
     color: #ca0f0f;
 }
 
-#step1, #step2 {
-    margin-bottom: 20px;
-}
-
 #buttonGroup {
     display: flex;
     justify-content: space-around;
@@ -78,10 +74,6 @@ input, select {
     display: block;
     margin-bottom: 8px;
     color: #555;
-}
-
-.container {
-    padding: 10px;
 }
 
 .navbar {
